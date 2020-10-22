@@ -40,7 +40,49 @@ def letra_o(x)
   print "\n"
 end
 
-#método para hacer letra i
+#método para hacer letra
+def letra_i(x)
+  x.times do |i|
+    print "*"
+  end
+  print "\n"
+  x.times do |i|
+    if i != (x/2)
+      print " "
+    else
+      print "*"
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i != (x/2)
+      print " "
+    else
+      print "*"
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i != (x/2)
+      print " "
+    else
+      print "*"
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i != (x/2)
+      print " "
+    else
+      print "*"
+    end
+  end
+  print "\n"
+  x.times do |i|
+    print "*"
+  end
+  print "\n"
+end
 
 
 
@@ -49,4 +91,4 @@ n = ARGV[0].to_i
 
 puts letra_o(n)
 puts "\n"
-puts "siguiente"
+puts letra_i(n)
