@@ -212,7 +212,71 @@ def numero_0(x)
   print "\n"
 end
 
-
+#método para árbol de navidad
+def navidad(x)
+  x.times do |i|
+    if i != (x-2)
+      print " "
+    else
+      print "*"
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i == ((x/2))
+      print "*"
+    elsif i == ((x/2)+2)
+      print "*"
+    else
+      print " "
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i == 1
+      print "* "
+    elsif i == (x/2)
+      print "*"
+    elsif i == (x - 2)
+      print " *"
+    else
+      print " "
+    end
+  end
+  print "\n"
+  (x-1).times do |i|
+    print "* "
+  end
+  print "\n"
+  x.times do |i|
+    if i != ((x/2)+1)
+      print " "
+    else
+      print "*"
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i != ((x/2)+1)
+      print " "
+    else
+      print "*"
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i == ((x/2)-1)
+      print "* "
+    elsif i == (x/2)
+      print "* "
+    elsif i == (x-2)
+      print "*"
+    else
+      print " "
+    end
+  end
+  print "\n"
+end
 
 n = ARGV[0].to_i
 
@@ -225,4 +289,6 @@ puts "\n"
 puts letra_x(n)
 puts "\n"
 puts numero_0(n)
+puts "\n"
+puts navidad(n)
 puts "\n"
