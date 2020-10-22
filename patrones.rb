@@ -112,6 +112,58 @@ def letra_z(x)
   print "\n"
 end
 
+#método para hacer letra x
+def letra_x(x)
+  x.times do |i|
+    if i == 0
+      print "*"
+    elsif i == (x - 1)
+      print "*"
+    else
+      print " "
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i == 1
+      print "*"
+    elsif i == (x - 2)
+      print "*"
+    else
+      print " "
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i != (x/2)
+      print " "
+    else
+      print "*"
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i == 1
+      print "*"
+    elsif i == (x - 2)
+      print "*"
+    else
+      print " "
+    end
+  end
+  print "\n"
+  x.times do |i|
+    if i == 0
+      print "*"
+    elsif i == (x - 1)
+      print "*"
+    else
+      print " "
+    end
+  end
+  print "\n"
+end
+
 
 
 n = ARGV[0].to_i
@@ -121,3 +173,5 @@ puts "\n"
 puts letra_i(n)
 puts "\n"
 puts letra_z(n)
+puts "\n"
+puts letra_x(n)
