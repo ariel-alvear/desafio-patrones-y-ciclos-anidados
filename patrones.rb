@@ -81,117 +81,40 @@ def letra_x(x)
   print "\n"
 end
 
-
-
 #método para número 0
 def numero_0(x)
   x.times do |i|
-    print "*"
-  end
-  print "\n"
-  x.times do |i|
-    if i == 0
-      print "*"
-    elsif i == 1
-      print "*"
-    elsif i == (x - 1)
-      print "*"
-    else
-      print " "
+    i += 1
+    x.times do |j|
+      j += 1
+      if i == j || (i == 1 || i == x )|| (j == 1 || j == x)
+        print '*'
+      else
+        print ' '
+      end
     end
-  end
-  print "\n"
-  x.times do |i|
-    if i == 0
-      print "*"
-    elsif i == 2
-      print "*"
-    elsif i == (x - 1)
-      print "*"
-    else
-      print " "
-    end
-  end
-  x.times do |i|
-    if i == 0
-      print "*"
-    elsif i == (x - 2)
-      print "*"
-    elsif i == (x - 1)
-      print "*"
-    else
-      print " "
-    end
-  end
-  print "\n"
-  x.times do |i|
-    print "*"
+    print "\n"
   end
   print "\n"
 end
 
 #método para árbol de navidad
 def navidad(x)
-  x.times do |i|
-    if i != (x-2)
-      print " "
-    else
-      print "*"
+  (x + 2).times do |i|
+    i += 1
+    #parte de arriba
+    (x + 4).times do |j|
+      j += 1
+      if i + j == x || (j == (x - 1) && (i + j) < (x + 4)) || ((j - i) < x && (i + j) == (x + 2) && i < x) || ((j - i) < x && (i + j) == (x + 4) && i < x) || ((j - i) < x && (i + j) == (x + 6) && i < x)
+        print '*'
+      else
+        print ' '
+      end
     end
-  end
-  print "\n"
-  x.times do |i|
-    if i == ((x/2))
-      print "*"
-    elsif i == ((x/2)+2)
-      print "*"
-    else
-      print " "
-    end
-  end
-  print "\n"
-  x.times do |i|
-    if i == 1
-      print "* "
-    elsif i == (x/2)
-      print "*"
-    elsif i == (x - 2)
-      print " *"
-    else
-      print " "
-    end
-  end
-  print "\n"
-  (x-1).times do |i|
-    print "* "
-  end
-  print "\n"
-  x.times do |i|
-    if i != ((x/2)+1)
-      print " "
-    else
-      print "*"
-    end
-  end
-  print "\n"
-  x.times do |i|
-    if i != ((x/2)+1)
-      print " "
-    else
-      print "*"
-    end
-  end
-  print "\n"
-  x.times do |i|
-    if i == ((x/2)-1)
-      print "* "
-    elsif i == (x/2)
-      print "* "
-    elsif i == (x-2)
-      print "*"
-    else
-      print " "
-    end
+    #parte de abajo
+
+
+    print "\n"
   end
   print "\n"
 end
