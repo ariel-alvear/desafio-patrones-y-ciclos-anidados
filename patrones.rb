@@ -66,20 +66,21 @@ end
 
 #método para hacer letra x
 def letra_x(x)
-  (x + 1).times do |i|
-    j = 0
-    while j < (i + 1)
-      if j == i
-        print "*"
-      else
-        print '1'
-      end
+  x.times do |i|
+    i += 1
+    x.times do |j|
       j += 1
+      if j == i || j + i == (x + 1)
+        print '*'
+      else
+        print ' '
+      end
     end
     print "\n"
   end
   print "\n"
 end
+
 
 
 #método para número 0
