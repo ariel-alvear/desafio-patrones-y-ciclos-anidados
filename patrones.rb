@@ -51,30 +51,13 @@ def letra_z(x)
     print "*"
   end
   print "\n"
-  x.times do |i|
-    if i != (x - 2)
-      print " "
-    else
-      print "*"
+  (x-2).times do |i|
+    ((x-2)-i).times do |j|
+      print ' '
     end
+    print '*'
+    print "\n"
   end
-  print "\n"
-  x.times do |i|
-    if i != (x/2)
-      print " "
-    else
-      print "*"
-    end
-  end
-  print "\n"
-  x.times do |i|
-    if i != (1)
-      print " "
-    else
-      print "*"
-    end
-  end
-  print "\n"
   x.times do |i|
     print "*"
   end
@@ -83,53 +66,23 @@ end
 
 #método para hacer letra x
 def letra_x(x)
-  x.times do |i|
-    if i == 0
-      print "*"
-    elsif i == (x - 1)
-      print "*"
-    else
-      print " "
-    end
+  print '*'
+  (x-1).times do |i|
+    print ' '
   end
-  print "\n"
-  x.times do |i|
-    if i == 1
-      print "*"
-    elsif i == (x - 2)
-      print "*"
-    else
-      print " "
-    end
+  print '*'
+  puts "\n"
+  #parte del medio
+  (x-2).times do |i|
+    puts "\n"
   end
-  print "\n"
-  x.times do |i|
-    if i != (x/2)
-      print " "
-    else
-      print "*"
-    end
+
+  #parte inferior
+  print '*'
+  (x-1).times do |i|
+    print ' '
   end
-  print "\n"
-  x.times do |i|
-    if i == 1
-      print "*"
-    elsif i == (x - 2)
-      print "*"
-    else
-      print " "
-    end
-  end
-  print "\n"
-  x.times do |i|
-    if i == 0
-      print "*"
-    elsif i == (x - 1)
-      print "*"
-    else
-      print " "
-    end
-  end
+  print '*'
   print "\n"
 end
 
@@ -162,7 +115,6 @@ def numero_0(x)
       print " "
     end
   end
-  print "\n"
   x.times do |i|
     if i == 0
       print "*"
