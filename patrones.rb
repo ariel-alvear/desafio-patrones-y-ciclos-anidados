@@ -66,20 +66,50 @@ end
 
 #método para hacer letra x
 def letra_x(x)
+  #principio
   x.times do |i|
-    if i % x == 0 || i % x == (x-1)
+    if i % x == 0 || i % x == (x - 1)
       print '*'
     else
       print ' '
     end
   end
   print "\n"
-  (x-2).times do |i|
-    print '*'
+  #centro arriba
+  (x - 2).times do |i|
+    i.times do |j|
+      print ' '
+      if j % i == 0 || j % i == (x - 2)
+        print '*'
+      elsif
+        print ' '
+      end
+    end
   end
   print "\n"
+  #centro centro
+  (x/2).times do |i|
+    print ' '
+  end
+  print '*'
+  print "\n"
+  #centro aabajo
+  print " "
+  (x - 2).times do |i|
+    i.times do |j|
+      if j % x == 0
+        print '*'
+      else
+        print ' '
+      end
+      print " "
+    end
+  end
+  print "\n"
+
+  #final
   x.times do |i|
-    if i % x == 0 || i % x == (x-1)
+    if i % x == 0 || i % x == (x - 1)
       print '*'
     else
       print ' '
