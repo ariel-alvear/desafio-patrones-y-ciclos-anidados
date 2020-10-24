@@ -105,7 +105,7 @@ def navidad(x)
     #parte de arriba
     (x + 4).times do |j|
       j += 1
-      if i + j == x || (j == (x - 1) && (i + j) < (x + 4)) || ((j - i) < x && (i + j) == (x + 2) && i < x) || ((j - i) < x && (i + j) == (x + 4) && i < x) || ((j - i) < x && (i + j) == (x + 6) && i < x) || j == (x - 1)
+      if i + j == x || (j == (x - 1) && (i + j) < (x + 4)) || ((j - i) < x && (i + j) == (x + 2) && i < x) || ((j - i) < x && (i + j) == (x + 4) && i < x) || ((j - i) < x && (i + j) == (x + 6) && i < x) || j == (x - 1) || (i == (x + 2) && (i + j).odd? && (i - j) > 0) 
         print '*'
       else
         print ' '
